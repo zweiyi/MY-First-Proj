@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor orangeColor];
-    [self performSelector:@selector(changView) withObject:self afterDelay:3];
+    [self performSelector:@selector(changView) withObject:self afterDelay:10];
     
     UIImage *startImage = [UIImage imageNamed:@"开机界面.jpg"];
     UIImageView *startImageView = [[UIImageView alloc] init];

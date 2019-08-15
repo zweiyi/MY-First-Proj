@@ -213,7 +213,6 @@ static NSString *zCell = @"ZWYCell";
 -(void)pressDown :(UIButton *) btn {
     UIImage *image = [UIImage imageNamed:@"签到.png"];
     [btn setImage:image forState:UIControlStateNormal];
-    NSLog(@"pressDown");
 
 }
 

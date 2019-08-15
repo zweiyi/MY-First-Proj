@@ -29,4 +29,5 @@
     _noteTextField.secureTextEntry = YES;
 }
 
+
 @end
