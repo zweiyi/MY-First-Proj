@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A2EAEA122FA566200A77BCE /* BegingShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2EAEA022FA566200A77BCE /* BegingShowViewController.m */; };
+		3A2EAEA422FA573300A77BCE /* 伦.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAEA322FA573300A77BCE /* 伦.jpg */; };
+		3A2EAEA622FA5D0D00A77BCE /* 非正3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAEA522FA5D0D00A77BCE /* 非正3.jpg */; };
+		3A2EAEAB22FA659600A77BCE /* 密码.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAEAA22FA659600A77BCE /* 密码.png */; };
+		3A2EAEB122FA688F00A77BCE /* 账号.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAEB022FA688F00A77BCE /* 账号.png */; };
+		3A2EAEB322FA690300A77BCE /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAEB222FA690300A77BCE /* line.png */; };
+		3A2EAEB622FA6E1100A77BCE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2EAEB522FA6E1100A77BCE /* RegisterViewController.m */; };
+		3A2EAEB822FA726F00A77BCE /* 非正背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAEB722FA726F00A77BCE /* 非正背景.jpg */; };
+		3A2EAEBB22FA7D1A00A77BCE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2EAEBA22FA7D1A00A77BCE /* MainViewController.m */; };
+		3A2EAEBD22FAAF5900A77BCE /* 非正大家庭.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAEBC22FAAF5900A77BCE /* 非正大家庭.jpg */; };
+		3A2EAEBF22FAB86800A77BCE /* 非正毕业.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAEBE22FAB86800A77BCE /* 非正毕业.jpeg */; };
+		3A2EAEC122FAB9D900A77BCE /* 背景图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAEC022FAB9D900A77BCE /* 背景图.jpg */; };
+		3A2EAEC722FABFAF00A77BCE /* AllMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2EAEC622FABFAF00A77BCE /* AllMessageViewController.m */; };
+		3A2EAECD22FAC34800A77BCE /* StudentAllTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2EAECC22FAC34800A77BCE /* StudentAllTableViewCell.m */; };
+		3A2EAECF22FAC74F00A77BCE /* 背景all.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAECE22FAC74F00A77BCE /* 背景all.jpg */; };
+		3A2EAED222FAEB4700A77BCE /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2EAED122FAEB4700A77BCE /* AddViewController.m */; };
+		3A2EAED422FAEC5B00A77BCE /* 增加背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A2EAED322FAEC5B00A77BCE /* 增加背景.jpg */; };
+		3A2EAEDD22FB093700A77BCE /* DeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2EAEDC22FB093700A77BCE /* DeleteViewController.m */; };
+		3AC55FEF22F95FA100EF546A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC55FEE22F95FA100EF546A /* AppDelegate.m */; };
+		3AC55FF222F95FA100EF546A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC55FF122F95FA100EF546A /* ViewController.m */; };
+		3AC55FF522F95FA100EF546A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC55FF322F95FA100EF546A /* Main.storyboard */; };
+		3AC55FF722F95FA200EF546A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC55FF622F95FA200EF546A /* Assets.xcassets */; };
+		3AC55FFA22F95FA200EF546A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC55FF822F95FA200EF546A /* LaunchScreen.storyboard */; };
+		3AC55FFD22F95FA200EF546A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC55FFC22F95FA200EF546A /* main.m */; };
+		3AC5600522F95FCF00EF546A /* AccountMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5600422F95FCF00EF546A /* AccountMessage.m */; };
+		3AC5600B22F97B8100EF546A /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5600A22F97B8100EF546A /* Student.m */; };
+		3AE0926122FBA5B900071FB2 /* CorrectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0926022FBA5B900071FB2 /* CorrectViewController.m */; };
+		3AE0926722FBA8D300071FB2 /* CorrectingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0926622FBA8D300071FB2 /* CorrectingViewController.m */; };
+		3AE0926A22FBADE700071FB2 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0926922FBADE700071FB2 /* FindViewController.m */; };
+		3AE0926D22FBB2A200071FB2 /* FindResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0926C22FBB2A200071FB2 /* FindResultViewController.m */; };
+		3AE0926F22FBB78D00071FB2 /* 非正12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0926E22FBB78D00071FB2 /* 非正12.jpg */; };
+		3AE0927122FBD2CF00071FB2 /*  非正233.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0927022FBD2CF00071FB2 /*  非正233.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A2EAE9F22FA566200A77BCE /* BegingShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BegingShowViewController.h; sourceTree = "<group>"; };
+		3A2EAEA022FA566200A77BCE /* BegingShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BegingShowViewController.m; sourceTree = "<group>"; };
+		3A2EAEA322FA573300A77BCE /* 伦.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "伦.jpg"; sourceTree = "<group>"; };
+		3A2EAEA522FA5D0D00A77BCE /* 非正3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "非正3.jpg"; sourceTree = "<group>"; };
+		3A2EAEAA22FA659600A77BCE /* 密码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码.png"; sourceTree = "<group>"; };
+		3A2EAEB022FA688F00A77BCE /* 账号.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "账号.png"; sourceTree = "<group>"; };
+		3A2EAEB222FA690300A77BCE /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		3A2EAEB422FA6E1100A77BCE /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		3A2EAEB522FA6E1100A77BCE /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		3A2EAEB722FA726F00A77BCE /* 非正背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "非正背景.jpg"; sourceTree = "<group>"; };
+		3A2EAEB922FA7D1A00A77BCE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3A2EAEBA22FA7D1A00A77BCE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3A2EAEBC22FAAF5900A77BCE /* 非正大家庭.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "非正大家庭.jpg"; sourceTree = "<group>"; };
+		3A2EAEBE22FAB86800A77BCE /* 非正毕业.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "非正毕业.jpeg"; sourceTree = "<group>"; };
+		3A2EAEC022FAB9D900A77BCE /* 背景图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "背景图.jpg"; sourceTree = "<group>"; };
+		3A2EAEC522FABFAF00A77BCE /* AllMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllMessageViewController.h; sourceTree = "<group>"; };
+		3A2EAEC622FABFAF00A77BCE /* AllMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllMessageViewController.m; sourceTree = "<group>"; };
+		3A2EAECB22FAC34800A77BCE /* StudentAllTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentAllTableViewCell.h; sourceTree = "<group>"; };
+		3A2EAECC22FAC34800A77BCE /* StudentAllTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentAllTableViewCell.m; sourceTree = "<group>"; };
+		3A2EAECE22FAC74F00A77BCE /* 背景all.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "背景all.jpg"; sourceTree = "<group>"; };
+		3A2EAED022FAEB4700A77BCE /* AddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		3A2EAED122FAEB4700A77BCE /* AddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		3A2EAED322FAEC5B00A77BCE /* 增加背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "增加背景.jpg"; sourceTree = "<group>"; };
+		3A2EAEDB22FB093700A77BCE /* DeleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteViewController.h; sourceTree = "<group>"; };
+		3A2EAEDC22FB093700A77BCE /* DeleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteViewController.m; sourceTree = "<group>"; };
+		3AC55FEA22F95FA100EF546A /* UI学生管理系统.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI学生管理系统.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC55FED22F95FA100EF546A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3AC55FEE22F95FA100EF546A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3AC55FF022F95FA100EF546A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3AC55FF122F95FA100EF546A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3AC55FF422F95FA100EF546A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AC55FF622F95FA200EF546A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AC55FF922F95FA200EF546A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AC55FFB22F95FA200EF546A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC55FFC22F95FA200EF546A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AC5600322F95FCF00EF546A /* AccountMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountMessage.h; sourceTree = "<group>"; };
+		3AC5600422F95FCF00EF546A /* AccountMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountMessage.m; sourceTree = "<group>"; };
+		3AC5600922F97B8100EF546A /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		3AC5600A22F97B8100EF546A /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		3AE0925F22FBA5B900071FB2 /* CorrectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CorrectViewController.h; sourceTree = "<group>"; };
+		3AE0926022FBA5B900071FB2 /* CorrectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorrectViewController.m; sourceTree = "<group>"; };
+		3AE0926522FBA8D300071FB2 /* CorrectingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CorrectingViewController.h; sourceTree = "<group>"; };
+		3AE0926622FBA8D300071FB2 /* CorrectingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorrectingViewController.m; sourceTree = "<group>"; };
+		3AE0926822FBADE700071FB2 /* FindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		3AE0926922FBADE700071FB2 /* FindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		3AE0926B22FBB2A200071FB2 /* FindResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindResultViewController.h; sourceTree = "<group>"; };
+		3AE0926C22FBB2A200071FB2 /* FindResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindResultViewController.m; sourceTree = "<group>"; };
+		3AE0926E22FBB78D00071FB2 /* 非正12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "非正12.jpg"; sourceTree = "<group>"; };
+		3AE0927022FBD2CF00071FB2 /*  非正233.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = " 非正233.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AC55FE722F95FA100EF546A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A2EAEA222FA572000A77BCE /* image */ = {
+			isa = PBXGroup;
+			children = (
+				3A2EAEA722FA655F00A77BCE /* 小图标 */,
+				3A2EAEA322FA573300A77BCE /* 伦.jpg */,
+				3AE0926E22FBB78D00071FB2 /* 非正12.jpg */,
+				3A2EAEBC22FAAF5900A77BCE /* 非正大家庭.jpg */,
+				3A2EAEA522FA5D0D00A77BCE /* 非正3.jpg */,
+				3A2EAEB722FA726F00A77BCE /* 非正背景.jpg */,
+				3A2EAEBE22FAB86800A77BCE /* 非正毕业.jpeg */,
+				3A2EAEC022FAB9D900A77BCE /* 背景图.jpg */,
+				3A2EAECE22FAC74F00A77BCE /* 背景all.jpg */,
+				3A2EAED322FAEC5B00A77BCE /* 增加背景.jpg */,
+				3AE0927022FBD2CF00071FB2 /*  非正233.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		3A2EAEA722FA655F00A77BCE /* 小图标 */ = {
+			isa = PBXGroup;
+			children = (
+				3A2EAEAA22FA659600A77BCE /* 密码.png */,
+				3A2EAEB022FA688F00A77BCE /* 账号.png */,
+				3A2EAEB222FA690300A77BCE /* line.png */,
+			);
+			path = "小图标";
+			sourceTree = "<group>";
+		};
+		3AC55FE122F95FA100EF546A = {
+			isa = PBXGroup;
+			children = (
+				3A2EAEA222FA572000A77BCE /* image */,
+				3AC55FEC22F95FA100EF546A /* UI学生管理系统 */,
+				3AC55FEB22F95FA100EF546A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AC55FEB22F95FA100EF546A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AC55FEA22F95FA100EF546A /* UI学生管理系统.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AC55FEC22F95FA100EF546A /* UI学生管理系统 */ = {
+			isa = PBXGroup;
+			children = (
+				3AC55FED22F95FA100EF546A /* AppDelegate.h */,
+				3AC55FEE22F95FA100EF546A /* AppDelegate.m */,
+				3A2EAE9F22FA566200A77BCE /* BegingShowViewController.h */,
+				3A2EAEA022FA566200A77BCE /* BegingShowViewController.m */,
+				3AC55FF022F95FA100EF546A /* ViewController.h */,
+				3AC55FF122F95FA100EF546A /* ViewController.m */,
+				3A2EAEB422FA6E1100A77BCE /* RegisterViewController.h */,
+				3A2EAEB522FA6E1100A77BCE /* RegisterViewController.m */,
+				3A2EAEB922FA7D1A00A77BCE /* MainViewController.h */,
+				3A2EAEBA22FA7D1A00A77BCE /* MainViewController.m */,
+				3A2EAEC522FABFAF00A77BCE /* AllMessageViewController.h */,
+				3A2EAEC622FABFAF00A77BCE /* AllMessageViewController.m */,
+				3A2EAED022FAEB4700A77BCE /* AddViewController.h */,
+				3A2EAED122FAEB4700A77BCE /* AddViewController.m */,
+				3A2EAEDB22FB093700A77BCE /* DeleteViewController.h */,
+				3A2EAEDC22FB093700A77BCE /* DeleteViewController.m */,
+				3AE0925F22FBA5B900071FB2 /* CorrectViewController.h */,
+				3AE0926022FBA5B900071FB2 /* CorrectViewController.m */,
+				3AE0926522FBA8D300071FB2 /* CorrectingViewController.h */,
+				3AE0926622FBA8D300071FB2 /* CorrectingViewController.m */,
+				3AE0926822FBADE700071FB2 /* FindViewController.h */,
+				3AE0926922FBADE700071FB2 /* FindViewController.m */,
+				3AE0926B22FBB2A200071FB2 /* FindResultViewController.h */,
+				3AE0926C22FBB2A200071FB2 /* FindResultViewController.m */,
+				3A2EAECB22FAC34800A77BCE /* StudentAllTableViewCell.h */,
+				3A2EAECC22FAC34800A77BCE /* StudentAllTableViewCell.m */,
+				3AC5600322F95FCF00EF546A /* AccountMessage.h */,
+				3AC5600422F95FCF00EF546A /* AccountMessage.m */,
+				3AC5600922F97B8100EF546A /* Student.h */,
+				3AC5600A22F97B8100EF546A /* Student.m */,
+				3AC55FF322F95FA100EF546A /* Main.storyboard */,
+				3AC55FF622F95FA200EF546A /* Assets.xcassets */,
+				3AC55FF822F95FA200EF546A /* LaunchScreen.storyboard */,
+				3AC55FFB22F95FA200EF546A /* Info.plist */,
+				3AC55FFC22F95FA200EF546A /* main.m */,
+			);
+			path = "UI学生管理系统";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AC55FE922F95FA100EF546A /* UI学生管理系统 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC5600022F95FA200EF546A /* Build configuration list for PBXNativeTarget "UI学生管理系统" */;
+			buildPhases = (
+				3AC55FE622F95FA100EF546A /* Sources */,
+				3AC55FE722F95FA100EF546A /* Frameworks */,
+				3AC55FE822F95FA100EF546A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UI学生管理系统";
+			productName = "UI学生管理系统";
+			productReference = 3AC55FEA22F95FA100EF546A /* UI学生管理系统.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AC55FE222F95FA100EF546A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "鳞潜羽翔";
+				TargetAttributes = {
+					3AC55FE922F95FA100EF546A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3AC55FE522F95FA100EF546A /* Build configuration list for PBXProject "UI学生管理系统" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AC55FE122F95FA100EF546A;
+			productRefGroup = 3AC55FEB22F95FA100EF546A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AC55FE922F95FA100EF546A /* UI学生管理系统 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AC55FE822F95FA100EF546A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2EAEAB22FA659600A77BCE /* 密码.png in Resources */,
+				3AE0926F22FBB78D00071FB2 /* 非正12.jpg in Resources */,
+				3AE0927122FBD2CF00071FB2 /*  非正233.jpg in Resources */,
+				3AC55FFA22F95FA200EF546A /* LaunchScreen.storyboard in Resources */,
+				3A2EAEB122FA688F00A77BCE /* 账号.png in Resources */,
+				3A2EAEC122FAB9D900A77BCE /* 背景图.jpg in Resources */,
+				3AC55FF722F95FA200EF546A /* Assets.xcassets in Resources */,
+				3A2EAEB822FA726F00A77BCE /* 非正背景.jpg in Resources */,
+				3A2EAEA622FA5D0D00A77BCE /* 非正3.jpg in Resources */,
+				3A2EAEBD22FAAF5900A77BCE /* 非正大家庭.jpg in Resources */,
+				3A2EAED422FAEC5B00A77BCE /* 增加背景.jpg in Resources */,
+				3A2EAEB322FA690300A77BCE /* line.png in Resources */,
+				3A2EAEBF22FAB86800A77BCE /* 非正毕业.jpeg in Resources */,
+				3A2EAEA422FA573300A77BCE /* 伦.jpg in Resources */,
+				3A2EAECF22FAC74F00A77BCE /* 背景all.jpg in Resources */,
+				3AC55FF522F95FA100EF546A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AC55FE622F95FA100EF546A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC55FF222F95FA100EF546A /* ViewController.m in Sources */,
+				3AC5600522F95FCF00EF546A /* AccountMessage.m in Sources */,
+				3AE0926722FBA8D300071FB2 /* CorrectingViewController.m in Sources */,
+				3A2EAED222FAEB4700A77BCE /* AddViewController.m in Sources */,
+				3AE0926D22FBB2A200071FB2 /* FindResultViewController.m in Sources */,
+				3AC5600B22F97B8100EF546A /* Student.m in Sources */,
+				3A2EAEBB22FA7D1A00A77BCE /* MainViewController.m in Sources */,
+				3AE0926122FBA5B900071FB2 /* CorrectViewController.m in Sources */,
+				3A2EAEA122FA566200A77BCE /* BegingShowViewController.m in Sources */,
+				3A2EAEB622FA6E1100A77BCE /* RegisterViewController.m in Sources */,
+				3A2EAEC722FABFAF00A77BCE /* AllMessageViewController.m in Sources */,
+				3A2EAECD22FAC34800A77BCE /* StudentAllTableViewCell.m in Sources */,
+				3AC55FFD22F95FA200EF546A /* main.m in Sources */,
+				3AE0926A22FBADE700071FB2 /* FindViewController.m in Sources */,
+				3AC55FEF22F95FA100EF546A /* AppDelegate.m in Sources */,
+				3A2EAEDD22FB093700A77BCE /* DeleteViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3AC55FF322F95FA100EF546A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AC55FF422F95FA100EF546A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AC55FF822F95FA200EF546A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AC55FF922F95FA200EF546A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AC55FFE22F95FA200EF546A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3AC55FFF22F95FA200EF546A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AC5600122F95FA200EF546A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7U4KZJ7R62;
+				INFOPLIST_FILE = "UI学生管理系统/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.UI------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AC5600222F95FA200EF546A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7U4KZJ7R62;
+				INFOPLIST_FILE = "UI学生管理系统/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.UI------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AC55FE522F95FA100EF546A /* Build configuration list for PBXProject "UI学生管理系统" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC55FFE22F95FA200EF546A /* Debug */,
+				3AC55FFF22F95FA200EF546A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC5600022F95FA200EF546A /* Build configuration list for PBXNativeTarget "UI学生管理系统" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC5600122F95FA200EF546A /* Debug */,
+				3AC5600222F95FA200EF546A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AC55FE222F95FA100EF546A /* Project object */;
+}
