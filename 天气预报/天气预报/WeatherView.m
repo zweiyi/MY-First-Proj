@@ -92,7 +92,7 @@
 }
 
 -(void)creatTableView {
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, W, H * 0.93) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, W, H * 0.92) style:UITableViewStylePlain];
     
     [self addSubview:_tableView];
    
@@ -116,7 +116,7 @@
         if (_messageArray.count && _weekArray.count) {
             headCell.backgroundColor = [UIColor clearColor];
             headCell.cityLabel.text = _cityName;
-            headCell.temperatureLabel.text = [NSString stringWithFormat:@"%@°", _messageArray[0][@"tmp_min"]];
+            headCell.temperatureLabel.text = [NSString stringWithFormat:@"%@°", _nowflString];
             headCell.weatherLabel.text =  _weatherMessageDictionary[@"cond_txt_d"];
             headCell.weekLabel.text = _weekArray[0][@"week"];
             headCell.maxtemlabel.text =  [NSString stringWithFormat:@"%@°", _messageArray[0][@"tmp_max"]];

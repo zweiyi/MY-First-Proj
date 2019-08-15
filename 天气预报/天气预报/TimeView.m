@@ -24,7 +24,7 @@
     self.backgroundColor = [UIColor clearColor];
     
     self.yunimageView = [[UIImageView alloc] init];
-    _yunimageView.frame = CGRectMake(20, 50, 50, 50);
+    _yunimageView.frame = CGRectMake(20, 50, 50, 40);
     _yunimageView.tintColor = [UIColor whiteColor];
     [self addSubview:_yunimageView];
     

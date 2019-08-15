@@ -36,7 +36,7 @@
     _tableView.tableFooterView = [[UIView alloc] init];
     
     _cityDataArray = [NSMutableArray array];
-    _cityTempArray = [NSMutableArray array];
+    _cityDataDictionary = [NSMutableDictionary dictionary];
     
     [self dataload];
 }
@@ -45,8 +45,10 @@
     if (indexPath.section == 0) {
         CityDataTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"cityCell" forIndexPath:indexPath];
         cell.cityNameLabel.text = _cityNameArray[indexPath.row];
-        if (_cityTempArray.count == _cityNameArray.count && _cityDataArray.count == _cityNameArray.count) {
-            cell.temLabel.text = [NSString stringWithFormat:@"%@°", _cityTempArray[indexPath.row]];
+        if (_cityDataDictionary.count == _cityNameArray.count && _cityDataArray.count == _cityNameArray.count) {
+//            NSLog(@"%@", _cityDataDictionary);
+            NSString *tempString = _cityDataDictionary[_cityNameArray[indexPath.row]];
+            cell.temLabel.text = tempString;
             NSMutableString *str = [NSMutableString stringWithFormat:@"%@", _cityDataArray[indexPath.row]];
             [str deleteCharactersInRange:NSMakeRange(0, 11)];
             cell.dateLabel.text = str;
@@ -100,6 +102,7 @@
 }
 
 - (void)passCityName:(NSString *)cityName {
+    
     [_cityNameArray addObject:cityName];
     
     [self dataload];
@@ -112,6 +115,7 @@
         [self creatData:i];
     }
 }
+
 -(void)creatData: (int) i {
     NSString *urlString = [NSString stringWithFormat:@"https://free-api.heweather.net/s6/weather?location=%@&key=8a1ea338b1c2465488be872925af3be8", _cityNameArray[i]];
     urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
@@ -125,10 +129,11 @@
         if (data) {
             id objc = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
             NSString  *dataString = objc[@"HeWeather6"][0][@"update"][@"loc"];
+            
             [self->_cityDataArray addObject:dataString];
-            NSString *tempString = objc[@"HeWeather6"][0][@"now"][@"tmp"];
-            [self->_cityTempArray addObject:tempString];
-    
+            NSString *tempString = objc[@"HeWeather6"][0][@"now"][@"fl"];
+            [self->_cityDataDictionary setObject:tempString forKey:self->_cityNameArray[i]];
+//            NSLog(@"%d", self->_cityDataDictionary.count == _cityNameArray.count);
             [self performSelectorOnMainThread:@selector(datareload) withObject:self waitUntilDone:NO];
 
         }
@@ -148,8 +153,6 @@
 -(void) datareload {
     [_tableView reloadData];
 }
-- (void)viewDidAppear:(BOOL)animated {
-    
-}
+
 
 @end

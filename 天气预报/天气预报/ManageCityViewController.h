@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, weak) id <CityNameDelegate> cityNameDelegate;
 @property (nonatomic, copy) NSMutableArray *cityDataArray;
-@property (nonatomic, copy) NSMutableArray *cityTempArray;
+@property (nonatomic, copy) NSMutableDictionary *cityDataDictionary;
 @end
 
 NS_ASSUME_NONNULL_END
