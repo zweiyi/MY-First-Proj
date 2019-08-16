@@ -35,8 +35,8 @@
     
     _tableView.tableFooterView = [[UIView alloc] init];
     
-    _cityDataArray = [NSMutableArray array];
     _cityDataDictionary = [NSMutableDictionary dictionary];
+    _cityDateDictionary = [NSMutableDictionary dictionary];
     
     [self dataload];
 }
@@ -45,11 +45,9 @@
     if (indexPath.section == 0) {
         CityDataTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"cityCell" forIndexPath:indexPath];
         cell.cityNameLabel.text = _cityNameArray[indexPath.row];
-        if (_cityDataDictionary.count == _cityNameArray.count && _cityDataArray.count == _cityNameArray.count) {
-//            NSLog(@"%@", _cityDataDictionary);
-            NSString *tempString = _cityDataDictionary[_cityNameArray[indexPath.row]];
-            cell.temLabel.text = tempString;
-            NSMutableString *str = [NSMutableString stringWithFormat:@"%@", _cityDataArray[indexPath.row]];
+        if (_cityDataDictionary.count == _cityNameArray.count  && _cityDateDictionary.count == _cityNameArray.count) {
+            cell.temLabel.text = _cityDataDictionary[_cityNameArray[indexPath.row]];
+            NSMutableString *str = [NSMutableString stringWithFormat:@"%@", _cityDateDictionary[_cityNameArray[indexPath.row]]];
             [str deleteCharactersInRange:NSMakeRange(0, 11)];
             cell.dateLabel.text = str;
         }
@@ -106,6 +104,7 @@
     [_cityNameArray addObject:cityName];
     
     [self dataload];
+    
     [_tableView reloadData];
     
 }
@@ -130,10 +129,9 @@
             id objc = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
             NSString  *dataString = objc[@"HeWeather6"][0][@"update"][@"loc"];
             
-            [self->_cityDataArray addObject:dataString];
             NSString *tempString = objc[@"HeWeather6"][0][@"now"][@"fl"];
             [self->_cityDataDictionary setObject:tempString forKey:self->_cityNameArray[i]];
-//            NSLog(@"%d", self->_cityDataDictionary.count == _cityNameArray.count);
+            [self->_cityDateDictionary setValue:dataString forKey:self->_cityNameArray[i]];
             [self performSelectorOnMainThread:@selector(datareload) withObject:self waitUntilDone:NO];
 
         }
