@@ -71,6 +71,8 @@
                         self->_weatherMessageDictionary = objc[@"HeWeather6"][0][@"daily_forecast"][0];
             self->_messageArray = objc[@"HeWeather6"][0][@"daily_forecast"];
             self->_nowflString = objc[@"HeWeather6"][0][@"now"][@"fl"];
+            self->_nowtemp = objc[@"HeWeather6"][0][@"now"][@"tmp"];
+//            NSLog(@"%@", objc[@"HeWeather6"][0][@"now"]);
 //            回到主线程的方法
 //            1.
             [self performSelectorOnMainThread:@selector(datareloadData) withObject:self waitUntilDone:NO];
@@ -116,7 +118,7 @@
         if (_messageArray.count && _weekArray.count) {
             headCell.backgroundColor = [UIColor clearColor];
             headCell.cityLabel.text = _cityName;
-            headCell.temperatureLabel.text = [NSString stringWithFormat:@"%@°", _nowflString];
+            headCell.temperatureLabel.text = _nowtemp;
             headCell.weatherLabel.text =  _weatherMessageDictionary[@"cond_txt_d"];
             headCell.weekLabel.text = _weekArray[0][@"week"];
             headCell.maxtemlabel.text =  [NSString stringWithFormat:@"%@°", _messageArray[0][@"tmp_max"]];

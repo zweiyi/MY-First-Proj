@@ -12,7 +12,6 @@
 #import "CityDataTableViewCell.h"
 
 @interface ManageCityViewController ()
-
 @end
 
 @implementation ManageCityViewController
@@ -126,13 +125,22 @@
     
     NSURLSessionDataTask *dataTask = [sharedSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (data) {
-            id objc = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            NSString  *dataString = objc[@"HeWeather6"][0][@"update"][@"loc"];
             
-            NSString *tempString = objc[@"HeWeather6"][0][@"now"][@"fl"];
-            [self->_cityDataDictionary setObject:tempString forKey:self->_cityNameArray[i]];
-            [self->_cityDateDictionary setValue:dataString forKey:self->_cityNameArray[i]];
-            [self performSelectorOnMainThread:@selector(datareload) withObject:self waitUntilDone:NO];
+            id objc = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            if ([objc[@"HeWeather6"][0][@"status"] isEqualToString:@"ok"]) {
+                NSString  *dataString = objc[@"HeWeather6"][0][@"update"][@"loc"];
+                
+                NSString *tempString = objc[@"HeWeather6"][0][@"now"][@"tmp"];
+                [self->_cityDataDictionary setObject:tempString forKey:self->_cityNameArray[i]];
+                [self->_cityDateDictionary setValue:dataString forKey:self->_cityNameArray[i]];
+                [self performSelectorOnMainThread:@selector(datareload) withObject:self waitUntilDone:NO];
+//            }
+            } else {
+                NSString *str = self->_cityNameArray[i];
+                [self->_cityNameArray removeObject:str];
+                [self performSelectorOnMainThread:@selector(datareload) withObject:self waitUntilDone:NO];
+            }
+            
 
         }
     }];

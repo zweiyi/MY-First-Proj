@@ -153,9 +153,7 @@
     
 }
 
-//-(void)alertdis :(UIAlertController *)alertController {
-//    [alertController dismissViewControllerAnimated:NO completion:nil];
-//}
+
 
 -(void)backhome {
     [self dismissViewControllerAnimated:NO completion:nil];

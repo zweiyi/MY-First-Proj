@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSMutableArray *weekArray;
 @property (nonatomic, copy) NSMutableArray *hourlyArray;
 @property (nonatomic, assign) NSString *nowflString;
+@property (nonatomic, strong) NSString *nowtemp;
 -(void) getcityName:(NSString *)cityName;
 @end
 
