@@ -84,6 +84,12 @@
             self.view.window.rootViewController = tabBarController;
         }
     }
+    if (i == _accountArray.count) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"账号或密码不正确" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:sureAction];
+        [self presentViewController:alertController animated:NO completion:nil];
+    }
 }
 
 - (void)pressRegister {

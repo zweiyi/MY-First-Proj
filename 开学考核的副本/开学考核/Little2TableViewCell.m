@@ -14,25 +14,25 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     _messageLabel = [[UILabel alloc] init];
-    [self addSubview:_messageLabel];
+    [self.contentView addSubview:_messageLabel];
     
     _photoimageView1 = [[UIImageView alloc] init];
-    [self addSubview:_photoimageView1];
+    [self.contentView addSubview:_photoimageView1];
     
     _photoimageView2 = [[UIImageView alloc] init];
-    [self addSubview:_photoimageView2];
+    [self.contentView addSubview:_photoimageView2];
     
     _photoimageView3 = [[UIImageView alloc] init];
-    [self addSubview:_photoimageView3];
+    [self.contentView addSubview:_photoimageView3];
     
     _littleImageView = [[UIImageView alloc] init];
-    [self addSubview:_littleImageView];
+    [self.contentView addSubview:_littleImageView];
     
     _leftLabel = [[UILabel alloc] init];
-    [self addSubview:_leftLabel];
+    [self.contentView addSubview:_leftLabel];
     
     _rightLabel = [[UILabel alloc] init];
-    [self addSubview:_rightLabel];
+    [self.contentView addSubview:_rightLabel];
     
     return self;
 }

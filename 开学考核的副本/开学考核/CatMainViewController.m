@@ -24,8 +24,27 @@
     
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 414, 300)];
-    view.backgroundColor = [UIColor orangeColor];
-   
+    view.backgroundColor = [UIColor whiteColor];
+    
+    UILabel *addLabel = [[UILabel alloc] init];
+    addLabel.text = @"西安";
+    addLabel.frame = CGRectMake(0, 0, 50, 30);
+    addLabel.textAlignment = NSTextAlignmentCenter;
+    [view addSubview:addLabel];
+    
+    UITextField *searchTextField = [[UITextField alloc] init];
+    searchTextField.frame = CGRectMake(60, 0, 300, 30);
+    searchTextField.placeholder = @"找影视剧，影人，影院，演出，图书";
+    searchTextField.layer.borderColor = [UIColor grayColor].CGColor;
+    searchTextField.layer.borderWidth = 1;
+    searchTextField.layer.cornerRadius = 10;
+    [view addSubview:searchTextField];
+    
+    UIImageView *middleImageView = [[UIImageView alloc] init];
+    middleImageView.image = [UIImage imageNamed:@"middle.png"];
+    middleImageView.frame = CGRectMake(0, 30, 414, 270);
+    [view addSubview:middleImageView];
+    
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 30, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     _tableView.tableHeaderView = view;
     [self.view addSubview:_tableView];
@@ -36,7 +55,7 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
-    _data1Array = @[@"非正11.jpg", @" 非正233.jpg", @"非正11.jpg", @" 非正233.jpg", @"非正11.jpg"];
+    _data1Array = @[@"非正11.jpg", @" 非正233.jpg", @"非正11.jpg", @" 非正233.jpg", @"非正1.jpg"];
     _data2Array = @[@"罗小黑战记", @"速度与激情", @"哪吒之魔童", @"烈火英雄", @"沉默的证人"];
     
 }
@@ -65,10 +84,11 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 1) {
-        return 165;
+    if (indexPath.section == 0) {
+        return 200;
     } else {
         return 250;
+       
     }
 }
 

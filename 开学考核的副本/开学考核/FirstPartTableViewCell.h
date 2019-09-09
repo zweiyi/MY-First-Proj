@@ -13,7 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FirstPartTableViewCell : UITableViewCell
 @property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIScrollView *scrollView1;
+@property (nonatomic, strong) UIScrollView *scrollView2;
 @property (nonatomic, strong) NSMutableArray<MyView *> *array;
+@property (nonatomic, strong) NSMutableArray<MyView *> *array1;
+@property (nonatomic, strong) UIButton *nowButton1;
+@property (nonatomic, strong) UIButton *nowButton2;
+@property (nonatomic, strong) UIButton *mashangButton1;
+@property (nonatomic, strong) UIButton *mashangButton2;
 -(void) getViewPhotoImageViewName:(NSArray *) photoName andName:(NSArray *)Name;
 @end
 
